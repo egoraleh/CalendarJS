@@ -1,0 +1,164 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+.calendar-container {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.day {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #ddd;
+    text-align: center;
+    cursor: pointer;
+}
+
+.day.selected {
+    background-color: #ffeb3b;
+}
+
+.notes-container {
+    margin-top: 20px;
+    width: 300px;
+}
+
+.task {
+    padding: 10px;
+}
+
+.btn-del {
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 70px;
+    height: 30px;
+    background-color: #ff231a;
+    box-shadow: 0 5px 0 #FF0600FF;
+}
+
+.btn-del:hover {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    background-color: #ff0600;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 400px;
+    height: 200px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+
+.modal.open {
+    display: block;
+}
+
+.choose-month {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.add-note {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 100px;
+    height: 40px;
+    background-color: #007bff;
+    box-shadow: 0 5px 0 #003CC5;
+}
+
+.add-note:hover {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    background-color: #0056b3;
+}
+
+.btn-save {
+    margin-top: 20px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 80px;
+    height: 25px;
+    background-color: #007bff;
+    box-shadow: 0 5px 0 #003CC5;
+}
+
+.btn-save:hover {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    background-color: #0056b3;
+}
+
+.btn-close {
+    margin-left: 10px;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    color: white;
+    width: 80px;
+    height: 25px;
+    background-color: #ff231a;
+    box-shadow: 0 5px 0 #FF0600FF;
+}
+
+.btn-close:hover {
+    box-shadow: none;
+    position: relative;
+    top: 5px;
+    background-color: #ff0600;
+}
+
+.modal-input {
+    width: 380px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.modal-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}

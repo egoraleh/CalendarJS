@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Календарь с заметками</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="calendar-container">
+    <div class="calendar-header">
+        <button class='choose-month' id="prevMonth">&lt;</button>
+        <h2 id="monthYear"></h2>
+        <button class='choose-month' id="nextMonth">&gt;</button>
+    </div>
+    <div class="calendar-grid" id="calendarGrid"></div>
+</div>
+
+<div id="notes" class="notes-container"></div>
+
+<button class='add-note' id="addNote">Добавить заметку</button>
+
+<div class="modal" id="modal">
+    <h2 class="modal-header" id="modalHeader">Добавление заметки</h2>
+    <div>
+    <input class="modal-input" id="modalInput" placeholder="Введите заметку...">
+    </div>
+    <button class="btn-save" id="modalSave">Сохранить</button>
+    <button class="btn-close" id="modalClose">Закрыть</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
